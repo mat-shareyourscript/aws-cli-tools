@@ -9,7 +9,7 @@ LABEL org.label-schema.name="aws-tools" \
 ENV AWS_CLI_VERSION="1.16.207"
 # Note: Latest version of AWS EB CLI may found at:
 # https://docs.aws.amazon.com/fr_fr/elasticbeanstalk/latest/relnotes/relnotes.html
-ENV_AWS_EB_CLI_VERSION="3.14.7"
+ENV AWS_EB_CLI_VERSION="3.14.7"
 
 RUN apk add --no-cache \
       ca-certificates \
