@@ -20,11 +20,13 @@ To set AWS environment:
 docker run --rm -e "AWS_ACCESS_KEY_ID=1234567890" -e "AWS_SECRET_ACCESS_KEY=azertyuiop" -e "AWS_DEFAULT_REGION=eu-west-1" matshareyourscript/aws-cli-tools
 ```
 
-AWS Elastic Beanstalk CLI example:
+#### Elastic Beanstalk usage
+
+To connect to EB environment, you have to provide a `/.elasticbeanstalk/config.yml` that will be copied inside `~/.elasticbeanstalk/` folder and run for example:
+
 ```
 docker run --rm -e "AWS_ACCESS_KEY_ID=1234567890" -e "AWS_SECRET_ACCESS_KEY=azertyuiop" -e "AWS_DEFAULT_REGION=eu-west-1" matshareyourscript/aws-cli-tools eb health __EB_ENVIRONMENT_NAME__
 ```
-
 
 -----------
 

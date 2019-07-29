@@ -12,6 +12,8 @@ ENV AWS_CLI_VERSION="1.16.207"
 ENV AWS_EB_CLI_VERSION="3.15.2"
 
 
+COPY configure.sh /root/
+
 RUN apk add --no-cache \
       ca-certificates \
       git \
@@ -27,7 +29,9 @@ RUN apk add --no-cache \
          py3-pip \
          python3-dev \
          build-base \
-    && rm -rf /var/cache/apk/*
+    && rm -rf /var/cache/apk/* \
+    && chmod 755 /root/configure.sh \
+    && bash /root/configure.sh
 
 WORKDIR /
 
