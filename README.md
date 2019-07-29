@@ -9,7 +9,7 @@
 
 ## Tags
 
-* [0.0.1](http://github.com/mat-shareyourscript/aws-cli-tools/releases/tag/0.0.1) - aws cli v1.16.207, aws eb cli v3.14.7, alpine 3.10
+* [0.0.1](http://github.com/mat-shareyourscript/aws-cli-tools/releases/tag/0.0.1) - aws cli v1.16.207, aws eb cli v3.15.2, alpine 3.10
 
 ## How to use this image
 
