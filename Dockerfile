@@ -32,8 +32,6 @@ RUN apk add --no-cache \
     && rm -rf /var/cache/apk/* \
     && chmod 755 /root/entrypoint.sh
 
-WORKDIR /
-
 ENTRYPOINT ["/root/entrypoint.sh"]
 
 CMD ["bash"]
