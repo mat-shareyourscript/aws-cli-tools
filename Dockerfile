@@ -12,7 +12,7 @@ ENV AWS_CLI_VERSION="1.16.207"
 ENV AWS_EB_CLI_VERSION="3.15.2"
 
 
-COPY entrypoint.sh /root/
+COPY docker-entrypoint.sh /usr/local/bin/
 
 RUN apk add --no-cache \
       ca-certificates \
@@ -30,9 +30,9 @@ RUN apk add --no-cache \
          python3-dev \
          build-base \
     && rm -rf /var/cache/apk/* \
-    && chmod 755 /root/entrypoint.sh
+    && chmod 755 /usr/local/bin/docker-entrypoint.sh
 
-ENTRYPOINT ["/root/entrypoint.sh"]
+ENTRYPOINT ["docker-entrypoint.sh"]
 
-CMD ["bash"]
+CMD ["/bin/bash"]
 
