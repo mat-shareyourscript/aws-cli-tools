@@ -2,7 +2,7 @@
 
 set -e
 
-export PATH='$PATH':~/.local/bin
+ln -s /root/.local/bin/* /usr/local/bin/
 
 # Configuration of EB environment (like eb init result)
 if [ -f ".elasticbeanstalk/config.yml" ]; then
