@@ -1,10 +1,10 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
+set -e
 
 # Configuration of EB environment (like eb init result)
-if [[ -f .elasticbeanstalk/config.yml ]]; then
+if [ -f ".elasticbeanstalk/config.yml" ]; then
   mkdir -p ~/.elasticbeanstalk && chmod 750 ~/.elasticbeanstalk
   cp .elasticbeanstalk/config.yml ~/.elasticbeanstalk/
 fi
-
 

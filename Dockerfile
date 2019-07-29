@@ -12,7 +12,7 @@ ENV AWS_CLI_VERSION="1.16.207"
 ENV AWS_EB_CLI_VERSION="3.15.2"
 
 
-COPY configure.sh /root/
+COPY entrypoint.sh /root/
 
 RUN apk add --no-cache \
       ca-certificates \
@@ -30,10 +30,11 @@ RUN apk add --no-cache \
          python3-dev \
          build-base \
     && rm -rf /var/cache/apk/* \
-    && chmod 755 /root/configure.sh \
-    && bash /root/configure.sh
+    && chmod 755 /root/entrypoint.sh
 
 WORKDIR /
+
+ENTRYPOINT ["/root/entrypoint.sh"]
 
 CMD ["bash"]
 
