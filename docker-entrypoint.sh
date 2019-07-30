@@ -3,7 +3,7 @@
 set -e
 set -x
 
-AWS_CONFIG_FILE="/root/.aws/config
+AWS_CONFIG_FILE="/root/.aws/config"
 
 if [[ -n ${AWS_ACCESS_KEY_ID} ]] && [[ -n ${AWS_SECRET_ACCESS_KEY} ]] && [[ -n ${AWS_DEFAULT_REGION} ]]; then
   mkdir -p /root/.aws
