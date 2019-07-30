@@ -1,7 +1,6 @@
 #!/bin/bash
 
 set -e
-set -x
 
 AWS_CONFIG_FILE="/root/.aws/config"
 
@@ -17,8 +16,7 @@ if [[ -n ${AWS_ACCESS_KEY_ID} ]] && [[ -n ${AWS_SECRET_ACCESS_KEY} ]] && [[ -n $
   chmod 600 /root/.aws/config
 fi
 
-export export PATH=$PATH:/root/.local/bin
+export PATH=$PATH:/root/.local/bin
 
-exec "$@"
-
+#exec "$@"
 
