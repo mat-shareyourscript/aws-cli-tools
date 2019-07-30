@@ -18,5 +18,4 @@ fi
 
 export PATH=$PATH:/root/.local/bin
 
-#exec "$@"
-
+exec "$@"
