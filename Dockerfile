@@ -5,11 +5,11 @@ LABEL org.label-schema.name="aws-cli-tools" \
       org.label-schema.vcs-url="https://github.com/mat-shareyourscript/aws-cli-tools"
 
 # Note: Latest version of AWS CLI may be found at:
-# https://github.com/aws/aws-cli/
-ENV AWS_CLI_VERSION="1.16.207"
+# https://github.com/aws/aws-cli/releases
+ENV AWS_CLI_VERSION="1.17.9"
 # Note: Latest version of AWS EB CLI may found at:
-# https://pypi.org/project/awsebcli/
-ENV AWS_EB_CLI_VERSION="3.15.2"
+# https://pypi.org/project/awsebcli/#history
+ENV AWS_EB_CLI_VERSION="3.17.0"
 
 
 COPY docker-entrypoint.sh /usr/local/bin/

@@ -1,6 +1,6 @@
 env:
   DOCKER_IMAGE=matshareyourscript/aws-cli-tools
-  DOCKER_TAG=0.0.1
+  DOCKER_TAG=0.0.2
 
 services:
   - docker
